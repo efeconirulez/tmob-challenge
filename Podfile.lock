@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (4.4.0)
+  - AsyncSwift (2.0.1)
+  - FTIndicator (1.2.0):
+    - FTIndicator/FTNotificationIndicator (= 1.2.0)
+    - FTIndicator/FTProgressIndicator (= 1.2.0)
+    - FTIndicator/FTToastIndicator (= 1.2.0)
+  - FTIndicator/FTNotificationIndicator (1.2.0)
+  - FTIndicator/FTProgressIndicator (1.2.0)
+  - FTIndicator/FTToastIndicator (1.2.0)
+  - SwifterSwift (1.6.3)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - AsyncSwift (~> 2.0.0)
+  - FTIndicator (~> 1.2)
+  - SwifterSwift (from `https://github.com/omaralbeik/SwifterSwift.git`)
+  - SwiftyJSON (~> 3.1)
+
+EXTERNAL SOURCES:
+  SwifterSwift:
+    :git: https://github.com/omaralbeik/SwifterSwift.git
+
+CHECKOUT OPTIONS:
+  SwifterSwift:
+    :commit: 33a9aa181e3a75dccefa6256c6724356b249a163
+    :git: https://github.com/omaralbeik/SwifterSwift.git
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AsyncSwift: 632138e42ead868b53c745fcde9bf733ce1527ad
+  FTIndicator: e1c035b99b8df1b1a40702b37cdc12fac5dd057c
+  SwifterSwift: c2d692f567ebdfce9f7c372b9e25201af6beabfc
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 2e780ff34c146600f46e7a42b99cadee94e684b1
+
+COCOAPODS: 1.2.1

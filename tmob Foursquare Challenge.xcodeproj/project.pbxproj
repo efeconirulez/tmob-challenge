@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27FF551A1E9FCBCA00456DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF55191E9FCBCA00456DEC /* AppDelegate.swift */; };
+		27FF551C1E9FCBCA00456DEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FF551B1E9FCBCA00456DEC /* ViewController.swift */; };
+		27FF551F1E9FCBCA00456DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FF551D1E9FCBCA00456DEC /* Main.storyboard */; };
+		27FF55211E9FCBCA00456DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FF55201E9FCBCA00456DEC /* Assets.xcassets */; };
+		27FF55241E9FCBCA00456DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FF55221E9FCBCA00456DEC /* LaunchScreen.storyboard */; };
+		D180781D5BCF517BB5621AE3 /* Pods_tmob_Foursquare_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA85514BE15C3775E286E1FB /* Pods_tmob_Foursquare_Challenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02EF9F2F60EBB9ABBB7C3348 /* Pods-tmob Foursquare Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob Foursquare Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tmob Foursquare Challenge/Pods-tmob Foursquare Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		27FF55161E9FCBC900456DEC /* tmob Foursquare Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tmob Foursquare Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27FF55191E9FCBCA00456DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27FF551B1E9FCBCA00456DEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27FF551E1E9FCBCA00456DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27FF55201E9FCBCA00456DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27FF55231E9FCBCA00456DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27FF55251E9FCBCA00456DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03E179A621123D90AAC31AB /* Pods-tmob Foursquare Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob Foursquare Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-tmob Foursquare Challenge/Pods-tmob Foursquare Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		FA85514BE15C3775E286E1FB /* Pods_tmob_Foursquare_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmob_Foursquare_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27FF55131E9FCBC900456DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D180781D5BCF517BB5621AE3 /* Pods_tmob_Foursquare_Challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27FF550D1E9FCBC900456DEC = {
+			isa = PBXGroup;
+			children = (
+				27FF55181E9FCBC900456DEC /* tmob Foursquare Challenge */,
+				27FF55171E9FCBC900456DEC /* Products */,
+				32894AD5ACEF64E1C3606745 /* Pods */,
+				6981266FCC6F3C0BDFA1B0BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27FF55171E9FCBC900456DEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27FF55161E9FCBC900456DEC /* tmob Foursquare Challenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27FF55181E9FCBC900456DEC /* tmob Foursquare Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				27FF55191E9FCBCA00456DEC /* AppDelegate.swift */,
+				27FF551B1E9FCBCA00456DEC /* ViewController.swift */,
+				27FF551D1E9FCBCA00456DEC /* Main.storyboard */,
+				27FF55201E9FCBCA00456DEC /* Assets.xcassets */,
+				27FF55221E9FCBCA00456DEC /* LaunchScreen.storyboard */,
+				27FF55251E9FCBCA00456DEC /* Info.plist */,
+			);
+			path = "tmob Foursquare Challenge";
+			sourceTree = "<group>";
+		};
+		32894AD5ACEF64E1C3606745 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02EF9F2F60EBB9ABBB7C3348 /* Pods-tmob Foursquare Challenge.debug.xcconfig */,
+				D03E179A621123D90AAC31AB /* Pods-tmob Foursquare Challenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6981266FCC6F3C0BDFA1B0BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA85514BE15C3775E286E1FB /* Pods_tmob_Foursquare_Challenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27FF55151E9FCBC900456DEC /* tmob Foursquare Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27FF55281E9FCBCA00456DEC /* Build configuration list for PBXNativeTarget "tmob Foursquare Challenge" */;
+			buildPhases = (
+				6A6099488F3E97733CB22D02 /* [CP] Check Pods Manifest.lock */,
+				27FF55121E9FCBC900456DEC /* Sources */,
+				27FF55131E9FCBC900456DEC /* Frameworks */,
+				27FF55141E9FCBC900456DEC /* Resources */,
+				B3DF4D03737A290799BE1573 /* [CP] Embed Pods Frameworks */,
+				0FA3CBD84189EB4248D360D4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tmob Foursquare Challenge";
+			productName = "tmob Foursquare Challenge";
+			productReference = 27FF55161E9FCBC900456DEC /* tmob Foursquare Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27FF550E1E9FCBC900456DEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Efe Helvacı";
+				TargetAttributes = {
+					27FF55151E9FCBC900456DEC = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = NG2H4EFXTS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 27FF55111E9FCBC900456DEC /* Build configuration list for PBXProject "tmob Foursquare Challenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27FF550D1E9FCBC900456DEC;
+			productRefGroup = 27FF55171E9FCBC900456DEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27FF55151E9FCBC900456DEC /* tmob Foursquare Challenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27FF55141E9FCBC900456DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF55241E9FCBCA00456DEC /* LaunchScreen.storyboard in Resources */,
+				27FF55211E9FCBCA00456DEC /* Assets.xcassets in Resources */,
+				27FF551F1E9FCBCA00456DEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FA3CBD84189EB4248D360D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tmob Foursquare Challenge/Pods-tmob Foursquare Challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A6099488F3E97733CB22D02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3DF4D03737A290799BE1573 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tmob Foursquare Challenge/Pods-tmob Foursquare Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27FF55121E9FCBC900456DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FF551C1E9FCBCA00456DEC /* ViewController.swift in Sources */,
+				27FF551A1E9FCBCA00456DEC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27FF551D1E9FCBCA00456DEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27FF551E1E9FCBCA00456DEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27FF55221E9FCBCA00456DEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27FF55231E9FCBCA00456DEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27FF55261E9FCBCA00456DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27FF55271E9FCBCA00456DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27FF55291E9FCBCA00456DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02EF9F2F60EBB9ABBB7C3348 /* Pods-tmob Foursquare Challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NG2H4EFXTS;
+				INFOPLIST_FILE = "tmob Foursquare Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.efehelvaci.tmob-Foursquare-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		27FF552A1E9FCBCA00456DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03E179A621123D90AAC31AB /* Pods-tmob Foursquare Challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NG2H4EFXTS;
+				INFOPLIST_FILE = "tmob Foursquare Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.efehelvaci.tmob-Foursquare-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27FF55111E9FCBC900456DEC /* Build configuration list for PBXProject "tmob Foursquare Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FF55261E9FCBCA00456DEC /* Debug */,
+				27FF55271E9FCBCA00456DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27FF55281E9FCBCA00456DEC /* Build configuration list for PBXNativeTarget "tmob Foursquare Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FF55291E9FCBCA00456DEC /* Debug */,
+				27FF552A1E9FCBCA00456DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27FF550E1E9FCBC900456DEC /* Project object */;
+}
