@@ -8,6 +8,7 @@ PODS:
   - FTIndicator/FTNotificationIndicator (1.2.0)
   - FTIndicator/FTProgressIndicator (1.2.0)
   - FTIndicator/FTToastIndicator (1.2.0)
+  - Kingfisher (3.6.2)
   - SwifterSwift (1.6.3)
   - SwiftyJSON (3.1.4)
 
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.4)
   - AsyncSwift (~> 2.0.0)
   - FTIndicator (~> 1.2)
+  - Kingfisher (~> 3.6)
   - SwifterSwift (from `https://github.com/omaralbeik/SwifterSwift.git`)
   - SwiftyJSON (~> 3.1)
 
@@ -31,9 +33,10 @@ SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   AsyncSwift: 632138e42ead868b53c745fcde9bf733ce1527ad
   FTIndicator: e1c035b99b8df1b1a40702b37cdc12fac5dd057c
+  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
   SwifterSwift: c2d692f567ebdfce9f7c372b9e25201af6beabfc
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 2e780ff34c146600f46e7a42b99cadee94e684b1
+PODFILE CHECKSUM: 47be4f7ce97770f54731f10fd156977120621eaf
 
 COCOAPODS: 1.2.1
