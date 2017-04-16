@@ -9,15 +9,30 @@
 import Foundation
 import SwiftyJSON
 
+protocol VenueUpdateDelegate {
+    func updateVenueViews()
+}
+
 class Venue: NSObject {
     var id : String!
     var name : String!
     var city : String!
     var country : String!
     var address : String = ""
-    var photoURL : String!
-    var tips = [String]()
+    var photoURL : String? {
+        didSet {
+            delegate?.updateVenueViews()
+        }
+    }
+    var tips = [String]() {
+        didSet {
+            delegate?.updateVenueViews()
+        }
+    }
     var location : Location!
+    
+    // Tips and PhotoURL are fetching async, so if they got updated while the venue details are opened they will be updated accordingly
+    var delegate : VenueUpdateDelegate?
     
     init(json: JSON) {
         self.id = json["id"].string ?? "-1"
@@ -25,8 +40,8 @@ class Venue: NSObject {
         self.city = json["location"]["city"].string ?? json["location"]["state"].string ?? ""
         self.country = json["location"]["country"].string ?? ""
         self.address = json["location"]["address"].string ?? ""
-        self.location = Location(lat: json["location"]["lat"].stringValue.double!, lon: json["location"]["lng"].stringValue.double!)
+        self.location = Location(lat: Double(json["location"]["lat"].stringValue)!, lon: Double(json["location"]["lng"].stringValue)!)
         
-        // Or we may get address from reverse geolocation json["location"]["lat"] and json["location"]["lng"]
+        // TODO: - We may get address from reverse geolocation using lat and lng values
     }
 }

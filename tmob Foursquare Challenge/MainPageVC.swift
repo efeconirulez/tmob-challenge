@@ -19,7 +19,8 @@ class MainPageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: (searchButton.width / 2.0) - 30, bottom: 0, right: 0)
+        venueTypeTF.delegate = self
+        venueLocationTF.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -50,6 +51,7 @@ class MainPageVC: UIViewController {
             return
         }
 
+        // Checks if user provided a custom location
         if venueLocationTF.text != nil && (venueLocationTF.text?.characters.count)! > 0 {
             vc.location = venueLocationTF.text
         }
@@ -58,5 +60,28 @@ class MainPageVC: UIViewController {
         print("Venue Location : \(venueLocationTF.text!)")
         print("Venue Type : \(venueTypeTF.text!)")
     }
+}
 
+
+// MARK: - Text Field Delegate Methods
+
+extension MainPageVC : UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        // To prevent non-english characters
+        let inverseSet = NSCharacterSet(charactersIn:"ABCDEFGHIJKLMNOPQRSTUVWXUZabcdefghijklmnopqrstuvwxyz").inverted
+        
+        let components = string.components(separatedBy: inverseSet)
+        
+        let filtered = components.joined(separator: "")
+        
+        return string == filtered
+    }
+    
+    // User can search directly through keyboard's return button, which is 'Search' button
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchButton.sendActions(for: .touchUpInside)
+        textField.resignFirstResponder()
+        return false
+    }
 }

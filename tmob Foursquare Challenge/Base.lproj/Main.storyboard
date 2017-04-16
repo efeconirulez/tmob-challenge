@@ -43,9 +43,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="uKi-3D-2kA"/>
                                 </constraints>
-                                <inset key="titleEdgeInsets" minX="100" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Search" image="icon_search">
+                                <state key="normal" image="icon_search">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -64,7 +63,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Exp. Cafe, Bar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uEA-Dd-zER">
                                 <rect key="frame" x="25" y="256.5" width="325" height="42"/>
@@ -73,20 +72,30 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eE-Vz-XfK">
+                                <rect key="frame" x="25" y="373" width="325" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="hcc-kW-xkS" secondAttribute="trailing" constant="25" id="DN9-gp-l0P"/>
+                            <constraint firstItem="8eE-Vz-XfK" firstAttribute="leading" secondItem="cBQ-IH-uhp" secondAttribute="leading" id="G7F-F8-AxJ"/>
                             <constraint firstItem="cBQ-IH-uhp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="IUK-N3-aOL"/>
                             <constraint firstItem="uEA-Dd-zER" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="JZ4-zx-zrg"/>
+                            <constraint firstItem="8eE-Vz-XfK" firstAttribute="bottom" secondItem="cBQ-IH-uhp" secondAttribute="bottom" id="OCm-ny-YmR"/>
                             <constraint firstAttribute="trailing" secondItem="cBQ-IH-uhp" secondAttribute="trailing" constant="25" id="PKC-YZ-1Mp"/>
                             <constraint firstItem="cBQ-IH-uhp" firstAttribute="top" secondItem="hcc-kW-xkS" secondAttribute="bottom" constant="16" id="fme-vr-Y2Z"/>
+                            <constraint firstItem="8eE-Vz-XfK" firstAttribute="top" secondItem="cBQ-IH-uhp" secondAttribute="top" id="fnq-0F-nv6"/>
                             <constraint firstItem="hcc-kW-xkS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="kJv-EI-ddL"/>
                             <constraint firstItem="cBQ-IH-uhp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kgw-es-rYx"/>
                             <constraint firstAttribute="trailing" secondItem="uEA-Dd-zER" secondAttribute="trailing" constant="25" id="mWu-8A-Rb1"/>
                             <constraint firstItem="hcc-kW-xkS" firstAttribute="top" secondItem="uEA-Dd-zER" secondAttribute="bottom" constant="16" id="q9H-ZM-gSH"/>
+                            <constraint firstItem="8eE-Vz-XfK" firstAttribute="trailing" secondItem="cBQ-IH-uhp" secondAttribute="trailing" id="rpm-xc-8l8"/>
                             <constraint firstItem="cBQ-IH-uhp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="x1N-dV-RYG"/>
                         </constraints>
                     </view>

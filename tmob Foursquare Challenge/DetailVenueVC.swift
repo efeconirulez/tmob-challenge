@@ -18,12 +18,17 @@ class DetailVenueVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         super.viewDidLoad()
         
         tableView.allowsSelection = false
+        
+        venue.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - Table view data source
+
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 4
@@ -52,7 +57,7 @@ class DetailVenueVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
             break
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "imageCell") as? ImageTableViewCell {
-                cell.setImage(url: venue.photoURL!)
+                cell.setImage(url: venue.photoURL)
                 return cell
             }
             break
@@ -84,7 +89,7 @@ class DetailVenueVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
             // Image cell height
             return 200
         case 3:
-            // Tip cells heights' are dynamic referencing from tip text length. And +30 for some breathing space.
+            // Tip cells heights' are dynamic referencing from tip text's length. And +30 for some breathing space.
             return venue.tips[indexPath.row].heightWithConstrainedWidth(UIScreen.main.bounds.size.width-16,
                                                                  font: UIFont.systemFont(ofSize: 14)) + 30
         default:
@@ -95,5 +100,13 @@ class DetailVenueVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 3 { return "Tips" }
         return nil
+    }
+}
+
+// MARK: - Venue Update Delegate method
+
+extension DetailVenueVC : VenueUpdateDelegate {
+    func updateVenueViews() {
+        tableView.reloadData()
     }
 }

@@ -13,9 +13,13 @@ class ImageTableViewCell: UITableViewCell {
 
     @IBOutlet weak var venueImageView: UIImageView!
     
-    func setImage(url: String) {
+    func setImage(url: String?) {
         venueImageView.kf.indicatorType = .activity
-        venueImageView.kf.setImage(with: URL(string: url))
+        venueImageView.kf.indicator?.startAnimatingView()
+    
+        guard url != nil else { return }
+    
+        venueImageView.kf.setImage(with: URL(string: url!))
     }
     
     override func awakeFromNib() {

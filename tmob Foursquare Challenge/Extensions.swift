@@ -9,6 +9,7 @@
 import UIKit
 
 extension String {
+    // Calculates and returns the height of the string based on its width and font
     func heightWithConstrainedWidth(_ width: CGFloat, font: UIFont) -> CGFloat {
         let constraintRect = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
         

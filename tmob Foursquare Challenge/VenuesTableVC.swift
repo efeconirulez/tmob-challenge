@@ -10,7 +10,7 @@ import UIKit
 import FTIndicator
 import CoreLocation
 
-class VenuesTableVC: UITableViewController, CLLocationManagerDelegate, UIPopoverPresentationControllerDelegate {
+class VenuesTableVC: UITableViewController {
 
     var location : String?
     var type : String!
@@ -22,6 +22,8 @@ class VenuesTableVC: UITableViewController, CLLocationManagerDelegate, UIPopover
     var locationManager : CLLocationManager!
     var currentLocation : Location? {
         didSet {
+            // After getting a current location monitoring will stop, 
+            // then places will be queried with the current location
             locationManager.stopUpdatingLocation()
             getPlacesFromCurrentLocation(location: currentLocation!, type: type)
         }
@@ -30,12 +32,15 @@ class VenuesTableVC: UITableViewController, CLLocationManagerDelegate, UIPopover
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // If user provides a location, places will queried with that location
+        // Otherwise current location is needed
         if location != nil {
             getPlacesFromString(location: location!, type: type)
         } else {
             locationManager = CLLocationManager()
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestWhenInUseAuthorization()
             locationManager.startUpdatingLocation()
         }
     }
@@ -83,6 +88,12 @@ class VenuesTableVC: UITableViewController, CLLocationManagerDelegate, UIPopover
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+
+}
+
+// MARK: - Location Manager Delegate Methods
+
+extension VenuesTableVC : CLLocationManagerDelegate {
     private func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         switch status {
         case .notDetermined,
@@ -104,11 +115,17 @@ class VenuesTableVC: UITableViewController, CLLocationManagerDelegate, UIPopover
         
         self.currentLocation = Location(lat: locValue.latitude, lon: locValue.longitude)
     }
-    
+}
+
+// MARK: - Popover Presentation Controller Delegate Methods
+
+extension VenuesTableVC : UIPopoverPresentationControllerDelegate {
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return UIModalPresentationStyle.none
     }
 }
+
+// MARK: - Self implemented methods
 
 extension VenuesTableVC {
     func getPlacesFromString(location : String, type : String) {
